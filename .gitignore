@@ -1,2 +1,3 @@
 #Settings
-.env
+storage/*.env
+*.node_modules

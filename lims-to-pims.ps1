@@ -1,11 +1,22 @@
-﻿$inPIServer = "Your PI-Server here"
-$User = "User here"
-$Pword = ConvertTo-SecureString -String "Pword here" -AsPlainText -Force
+﻿Import-Module Osisoft.PowerShell
+Import-Module dotenv
+
+$envPath = Join-Path $PSScriptRoot ".\.env"
+$envVars = Get-Content $envPath | ConvertFrom-StringData
+
+foreach($key in $envVars){
+    [Environment]::SetEnvironmentVariable($key, $envVars[$key], "Process")
+}
+
+$inPIServer = $env:inPIServer
+$User = $env:User
+$Pword = ConvertTo-SecureString -String "$env:Pword" -AsPlainText -Force
+
 $Credential= New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $User, $PWord
 $conn = Connect-PIDataArchive - PIDataArchiveMachineName $inPIServer
 $TimeStamp = Get-Date
 
-Import-Module Osisoft.PowerShell
+
 
 function GetAndProcessData($url, $token){
     
@@ -115,8 +126,8 @@ $associations = @{
     }
 }
 
-$apiUrl = "Your Lims apiUrl here"
-$token = "Your token here"
+$apiUrl = $env:apiURL
+$token = $env:token
 
 $dtAtual = Get-Date       
 
