@@ -135,8 +135,6 @@ $dtIni = $dtAtual.AddDays(-20).ToUniversalTime()
 $dtIniFormated = $dtIni.ToString("yyyy-MM-ddTHH:mm:ssZ")            
 $dtFin = $dtAtual.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ")
 
-$results = $null
-
 $orderby = "orderby=Sample/TakenDateTime desc &$"
 $top = "top=1"
 
