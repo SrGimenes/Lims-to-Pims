@@ -25,7 +25,7 @@
         margin: 20px;
         padding: 10px;   
     }
-    .Executaveis{
+    .Executables{
         color: white;
         border: 2px solid black;
         margin: 20px;
@@ -46,58 +46,54 @@
 </div>
 
 <div class="Systems">
-<h2>📌 Principais Sistemas </h2>
+<h2>📌 Main systems </h2>
 
 - MyLims
-    - Um LIMS é uma plataforma de software projetada para auxiliar laboratórios na organização, armazenamento, rastreamento e gerenciamento de amostras, dados e informações relacionadas às atividades laboratoriais.
+    - A LIMS is a software platform designed to assist laboratories in organizing, storing, tracking, and managing samples, data, and information related to laboratory activities.
     
 - Pims
-    - Plant Information Management System é um software robusto e versátil que permite a gestão completa das informações da planta. Você pode conhecer o sistema PIMS como “Sistema de Gerenciamento de Informação de Planta”.
+    - Plant Information Management System is a robust and versatile software that allows for complete management of plant information. You may know the PIMS system as "Plant Information Management System".
 
  </div>
 
 <div class="Work">
-<h2 align="left">📌 Qual foi a solicitação? </h2>
+<h2 align="left">📌 What was the request? </h2>
 
-- A implementação foi desenvolvida para atender uma solicitação da área de produção, onde o solicitante necessitava de obter informações da aplicação MyLims, para realizar esse envio a outra aplicação denominada Pims.
+- The implementation was developed to meet a request from the production department, where the requester needed to obtain information from the MyLims application to send it to another application called Pims..
 
-- Foi iniciado o estudo para entender quais seriam as melhores maneiras de realizar esta "integração". Ao decorrer do tempo, vimos que o MyLims já possuia essa integração pronta, porém a mesma não está contida em nossa licensa.
+- A study was initiated to understand the best ways to perform this "integration". Over time, we found that MyLims already had this integration ready, but it is not included in our license.
 
 </div>
 
-
-
-
-
 <div class="Funcionality">
-<H1 align="center">⚙️ Funcionalidade do script </H1>
+<H1 align="center">⚙️ Functionality of the script </H1>
 
-- `Funcionalidade 1`: Realiza a requisição da API fornecida pelo MyLims.
-- `Funcionalidade 2`: Pega e processa os dados recebidos da requisição.
-- `Funcionalidade 3`: Após realizar a requisição e processar os dados recebidos, é feito o envio dos dados para o Pims. 
+- `Feature 1`: Makes the request to the API provided by MyLims.
+- `Feature 2`: Fetches and processes the data received from the request.
+- `Feature 3`: After making the request and processing the received data, the data is sent. para o Pims. 
 
 </br>
 
-<H1 align="center">📌 Sobre o script </H1>
+<H1 align="center">📌 About the script </H1>
 
-- `Sobre 1`: Foi desenvolvido em PowerShell, devido o SDK para desenvovilmento com o Pims.
-- `Sobre 2`: Utiliza bibliotecas do PySystem-Osisoft.
-- `Sobre 3`: Após finalizar a implementação, foi criado uma rotina em uma VM para executar a cada 01:00 hora. 
+- `Regarding 1`: It was developed in PowerShell, due to the SDK for developing with o Pims.
+- `Regarding 2`: It uses the library from PySystem-Osisoft.
+- `Regarding 3`: After finishing the implementation, a routine was createdin a VirtualMachine to run every 01:00. 
 
 </div>
 
-<div class="Executaveis">
-<H1 align="center">📌 Softwares a necessários </H1>
+<div class="Executables">
+<H1 align="center">📌 Necessary software </H1>
 
-- Acesse o link para entender melhor os sóftwares necessários para executar o script.
+- Acess the link to understand better the necessary softwares for execute the script.
 - Link: https://docs.google.com/document/d/1VmP8dlpOPzZI_FNrm_Xu02gmpzhqh6qp/edit?usp=share_link&ouid=105886712674428510556&rtpof=true&sd=true
 
 </div>
 
 <div class="About">
-<H1 align="center">📌 Sobre </H1>
+<H1 align="center">📌 About </H1>
 
-- Para mais detalhes entre em contato pelo email gimenes.alencar2002@gmail.com.
+- For more details send a email for me in gimenes.alencar2002@gmail.com.
 
 </body>
 </html>
