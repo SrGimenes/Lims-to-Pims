@@ -39,9 +39,9 @@ function GetAndProcessData($url, $token){
         $tags = $tagnamelist | % {Get-Point - Connection $conn -Name $_ -AllAtributes}
         $DatePIMS = Get-PIValue - PIPoint $tags -Time $TimeStamp | % {$_.TimeStamp.tolocaltime()}
         $DatePIMSF = Get-Date $DatePIMS -Format "dd/MM/yyyy HH:mm:ss"
-
+        ADD-PIValue - PointName $valor -Time $date -value -Connection $conn -WriteMode Replace
         if($date -gt $DatePIMSF){
-            ADD-PIValue - PointName $valor -Time $date -value -Connection $conn
+            WRITE HOST "valor": $value
         }
     }
     $results | ConvertTo-Json | Set-Content -Path 'Your path here, to see a resul of json'
